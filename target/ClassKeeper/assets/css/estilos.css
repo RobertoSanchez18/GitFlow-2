@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+.form-control {
+	position: relative;
+}
+
+.form-control:focus {
+	border: none;
+	outline: 3px solid #0075ff;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__mensaje {
+	grid-column: span 2;
+	height: 45px;
+	line-height: 45px;
+	background-color: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	display: none;   
+}
+
+formulario__mensaje-activo {
+	display: block;
+}
+
+formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__label {
+	font-weight: 600;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+} 
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .form-control {
+	border: none;
+	outline: 3px solid #bb2929;
+}
+
+.btn__editar {
+	background-color: #FFB704;
+    padding: 6px;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.btn__eliminar {
+	background-color: #BB2929;
+    padding: 6px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+.card-body {
+	overflow-x: scroll;
+}
+
+
+

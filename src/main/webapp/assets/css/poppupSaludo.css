@@ -1,0 +1,75 @@
+.container__saludo {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px #CECDB5;
+    transition: top 0.3s ease;
+    font-family: 'Segoe UI', sans serif;
+    color: #000;
+    font-size: 14px;
+    opacity: 0;
+    animation: aparecerDesdeArriba 0.7s ease-out forwards;
+}
+
+@keyframes aparecerDesdeArriba {
+  from {
+    top: -100%; /* Empieza desde arriba de la pantalla */
+    opacity: 0; /* Inicialmente, el contenedor estará invisible */
+  }
+  to {
+    top: 20px; /* Termina en el centro vertical de la pantalla */
+    opacity: 1; /* El contenedor estará completamente visible */
+  }
+}
+
+.cerrar {
+	animation: regresar 3s ease-out forwards;
+}
+
+/* Animación de aparición desde arriba hacia abajo */
+@keyframes regresar {
+    from {
+        top: 20px;
+        /* Empieza desde arriba de la pantalla */
+        opacity: 1;
+        /* Inicialmente, el contenedor estará invisible */
+    }
+
+    to {
+        top: -100%;
+        /* Termina en el centro vertical de la pantalla */
+        opacity: 0;
+        /* El contenedor estará completamente visible */
+    }
+}
+
+.container__saludo p {
+	padding-top: 20px;
+}
+
+.gif__saludo {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.close__saludo {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.close__saludo:hover {
+	filter: brightness(0.9);
+}
+

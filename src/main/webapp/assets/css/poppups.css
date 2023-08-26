@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container__poppus__estado {
+	margin: 0 auto;
+	width: 900px;
+	height: 400px;
+	display: flex;
+	background-color: lightblue;
+}
+
+.container__popup-exito{
+    position: absolute;
+    top: 20px;
+    padding: 10px 30px;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px #CECDB5;
+    transition: top 0.3s ease;
+    font-family: 'Segoe UI', sans serif;
+    color: #000;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.icon__popup {
+	position: relative;
+	top: -10px;
+	width: 20px;
+	height: 20px;
+}
+
+.estado__exito {
+	color: #13BA53;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.operacion_realizada {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.text__content {
+	padding-left: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.close__popup {
+	position: relative;
+	top: -20px;
+	right: -20px;
+}
+
+.estado__error {
+	color: #F44948;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.container__popup-error{
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    padding: 10px 30px;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px #CECDB5;
+    transition: top 0.3s ease;
+    font-family: 'Segoe UI', sans serif;
+    color: #000;
+    font-size: 14px;
+    opacity: 1;
+}
+
